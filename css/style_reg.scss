@@ -6,14 +6,13 @@ body.pb {
 }
 .formText {
     text-align: left;
-    font-size: 0.7em;
-    line-height: 2em;
+    font-size: 1.1em;
+    line-height: 1.5em;
     i{
         color: #FE6500;
     }
-    @media (min-width:320px) { font-size: 0.9em; }
-    @media (min-width:600px) { font-size: 1em;}
-    @media (min-width:801px) { font-size: 1.2em; line-height: 1.6em; }
+    @media (min-width:320px) { font-size: 1.1em; }
+    @media (min-width:600px) { font-size: 1.2em;}
 }
 
 .block{
@@ -22,38 +21,57 @@ body.pb {
 
 .row {
     display: flex;
-    align-content: center;
+    align-items: baseline;
     @media (min-width:320px) { flex-direction: column;}
     @media (min-width:801px) { 
         flex-direction: row;
         justify-content: space-between;
+        
      }
 }
 
+.justify-start {
+    @media (min-width:801px) {
+        justify-content: flex-start!important;
+    }
+}
 
 .pb-contact-form .pb-contact-form-field {
     margin-bottom: 20px;
+    width: 100%;
     @media (min-width:801px) {width: 49%; }
 }
 
 .btnForm {
     background-color: #FE6500;
     color: white;
-    @media (min-width:320px) { margin: 20px 0;}
-    @media (min-width:801px) { margin: 0; width: 49%; }
+    @media (min-width:320px) { margin: 0 0 20px;}
+    @media (min-width:801px) { margin: 0; width: 49%; margin-left: 15px; }
+}
+
+.btn-primary {
+    margin-top: 15px!important;
+    @media (min-width:801px) { width: 49%!important; }
 }
 
 .price {
-    
-    font-size: 0.9em;
+    font-size: 1em;    
     span{
         font-weight: bold;
+    }
+    @media (min-width:320px) { font-size: 1.1em; }
+    @media (min-width:600px) { font-size: 1.2em;}
+}
+
+.priceTotal {
+    font-size: 1em;
+    text-align: right;
+    span{
         color: #FE6500;
         
     }
-    @media (min-width:320px) { font-size: 0.9em; }
-    @media (min-width:600px) { font-size: 1em;}
-    @media (min-width:801px) { font-size: 1.2em; line-height: 1.6em; }
+    @media (min-width:320px) { font-size: 1.4em; }
+    @media (min-width:600px) { font-size: 1.6em;}
 }
 
 .pb-contact-form select, .pb-contact-form textarea, .pb-contact-form input[type="text"], .pb-contact-form input[type="password"] {
@@ -70,10 +88,10 @@ body.pb {
     z-index: 0;
     position: relative;
     display: inline-block;
-    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
-    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    color: rgba( 0, 0, 0, 0.87);
     font-size: 16px;
     line-height: 1.5;
+    margin: 10px 0;
 }
 
 /* Input */
@@ -90,7 +108,7 @@ body.pb {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    background-color: rgba( 0, 0, 0, 0.6);
     box-shadow: none;
     outline: none;
     opacity: 0;
@@ -113,7 +131,7 @@ body.pb {
     box-sizing: border-box;
     margin: 3px 11px 3px 1px;
     border: solid 2px; /* Safari */
-    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-color: #E8E8E8;
     border-radius: 2px;
     width: 18px;
     height: 18px;
@@ -139,13 +157,13 @@ body.pb {
 /* Checked, Indeterminate */
 .pure-material-checkbox > input:checked,
 .pure-material-checkbox > input:indeterminate {
-    background-color: rgb(33, 150, 243);
+    background-color: #4ccef0;
 }
 
 .pure-material-checkbox > input:checked + span::before,
 .pure-material-checkbox > input:indeterminate + span::before {
-    border-color: rgb(33, 150, 243);
-    background-color: rgb(33, 150, 243);
+    border-color: #4ccef0;
+    background-color: #4ccef0;
 }
 
 .pure-material-checkbox > input:checked + span::after,
@@ -179,7 +197,7 @@ body.pb {
 }
 
 .pure-material-checkbox > input:active + span::before {
-    border-color: rgb(33, 150, 243);
+    border-color: #4ccef0;
 }
 
 .pure-material-checkbox > input:checked:active + span::before {

@@ -234,79 +234,70 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                 </div></div></li></ul>
 </div>
 
+<div id="pb_line_D8C55D17C0B0DA35C2549E809527574D"  class="pb-line pb-clear-fix"></div>
 
-<div id="pb_line_D8C55D17C0B0DA35C2549E809527574D"  class="pb-line pb-clear-fix">
+<div class="pb-line pb-main">
 
-<div class="pb-line pb-clear-fix  pb-main">
-<div class="block">
-    <div class="pb-text">
-        <h4 class="formTitle">Advanced Coding Level 1</h4>
-        <p class="formText">
-            <i class="icon icon-ca-clock"></i> 1:00 pm - 3:00 pm EDT <br>
-            <i class="icon icon-ca-calendar"></i> Mar 23 - Mar 27<br>
-        </p>
-    </div>
+<div id="proceed">
 
-    <!-- ТЕКСТ ЗАКАЗА -->
-    <div id="proceed">
-        <form method="post"  class="pb-contact-form" id="order_form">
-            <div class="row">
-                <div class="pb-contact-form-field">
-                    <select id="pb_students" class="pb-infield-label formSelect">
-                        <option value="">Please choose the number of students</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-            </div>
+<form method="post"  class="pb-contact-form" id="order_form">
 
-            <div class="price" style="margin: -10px 0 20px;">Program Cost: <span>$<span id="mcost" data-cost="185">185</span></span><span id="dcost"></span></div>
-
-            <div class="row"> 
-                <div class="pb-contact-form-field">
-                    <input type="text" id="pb_promo_code" class="formInput" placeholder="Promo code:" name="promo_code" onblur="document.getElementById('checkPromo').click()">
-                </div>
-                <button type="button" class="btn btn-warning btn-sm btnForm" id="checkPromo">Apply Promo Code</button>
-                <span id="pmsg"></span>
-            </div>
-            <div class="price">Total Cost: <span>$<span id="mcost" data-cost="185">185</span></span><span id="dcost"></span></div>
+    <div class="block">
+        <div class="pb-text formText">
+            <h4 class="formTitle">Advanced Coding Level 1</h4>
+            <p>
+                <i class="icon icon-ca-clock"></i> 1:00 pm - 3:00 pm EDT <br>
+                <i class="icon icon-ca-calendar"></i> Mar 23 - Mar 27<br>
+            </p>
         </div>
 
-        <input type="hidden" name="r" value="Tue, 17 Mar 2020 11:02:36 -0400">
-        <input type="hidden" name="tok" value="c4b510b2db6a0aef2123571b96c059c7">
-        <input type="hidden" name="program" value="JUUWMVZWN9DRUG3P">
+        <div class="row justify-start">
+            <div class="pb-contact-form-field">
+                <select id="pb_students" class="pb-infield-label inputForm">
+                    <option value="">Please choose the number of students</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+        </div>
+        <div class="price" style="margin-top: -5px;">Program Cost: <span>$<span id="mcost" data-cost="185">185</span></span><span id="dcost"></span></div>
 
+    </div>
 
-            <!-- УЧЕНИК -->
+    <div style="padding-top: 20px;" class="block">
+        <div class="row justify-start">
+            <div class="pb-contact-form-field">
+                <input type="text" class="inputForm" id="pb_promo_code" placeholder="Promo code" name="promo_code" onblur="document.getElementById('checkPromo').click()">
+            </div>
+            <button type="button" class="btn btn-primary btnForm" id="checkPromo">Apply Promo Code</button>        
+        </div>
+        <div class="price priceTotal">Total Cost: <span>$<span id="mcost" data-cost="185">185</span></span><span id="dcost"></span></div>
+        <span id="pmsg"></span>
+    </div>
 
-        <div class="block">
-            <h5 class="formTitle">Student Information</h5>
+    <input type="hidden" name="r" value="Tue, 17 Mar 2020 11:02:36 -0400">
+    <input type="hidden" name="tok" value="c4b510b2db6a0aef2123571b96c059c7">
+    <input type="hidden" name="program" value="JUUWMVZWN9DRUG3P">
+
+    <div class="block" id="studentBlock">
+        <div class="well">
+            <h5 class="titleForm">Student Information</h5>
             <div class="child-num" style="display: none; font-weight: bold">Child 1</div>
-            
+
             <div class="row">
                 <div class="pb-contact-form-field">
-                    <select class="form-control formSelect" id="pb_new" required>
-                        <option value="">New</option>
-                        <option value="John">John</option>
-                        <option value="Sara">Sara</option>
-                        <option value="Tom">Tom</option>
-                    </select>
+                    <input type="text" class="form-controlinputForm" placeholder="First Name*" name="student_firstname[1]" id="pb_student_firstname-1" required>
+                </div>            
+                
+                <div class="pb-contact-form-field">
+                    <input  type="text" class="form-control inputForm" placeholder="Last Name*" name="student_lastname[1]" id="pb_student_lastname-1" required>
                 </div>
             </div>
 
             <div class="row">
-                <div class="pb-contact-form-field formInput">
-                    <input placeholder="First Name*" type="text" class="form-control formInput" name="student_firstname[1]" id="pb_student_firstname-1" required>
-                </div>
-
-                <div class="pb-contact-form-field formInput">
-                    <input placeholder="Last Name*"  type="text" class="form-control formInput" name="student_lastname[1]" id="pb_student_lastname-1" required>
-                </div>
-            </div>
-            <div class="row">
                 <div class="pb-contact-form-field">
-                    <select class="form-control formSelect" name="student_grade[1]" id="pb_student_grade-1" required>
+                    <select class="form-control selectForm" name="student_grade[1]" id="pb_student_grade-1" required>
                         <option value="">Grade*</option>
                         <option value="Pre-K">Pre-K</option>
                         <option value="K">K</option>
@@ -320,306 +311,306 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                         <option value="8th">8th</option>
                     </select>
                 </div>
-
                 <div class="pb-contact-form-field">
-                    <select id="pb_student_experience-1" class="form-control formSelect" name="student_experience[1]" required>
-                        <option value="">Does your child have prior experience?</option>
-                    </select>
-                </div>
+                    <input type="text" id="pb_student_experience-1" placeholder="Does your child have prior experience?" class="form-control inputForm" name="student_experience[1]">
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <div class="block">
+        <h5>Parent Information</h5>
+        <div class="row">
+            <div class="pb-contact-form-field">
+                <input type="text" class="form-control inputForm" placeholder="First Name*" name="firstname" id="pb_firstname" value=""  required>
+            </div>
+
+            <div class="pb-contact-form-field">
+                <input type="text" class="form-control inputForm" placeholder="Last Name*" name="lastname" id="pb_lastname" value="" required>
             </div>
         </div>
 
-        <!-- РОДИТЕЛЬ -->
-
-        <div class="block">
-            <h5 class="formTitle">Parent Information</h5>
-            <div class="row">
-                <div class="pb-contact-form-field">
-                    <input type="text" placeholder="First Name*" class="form-control formInput" name="firstname" id="pb_firstname" value=""  required>
-                </div>
-
-                <div class="pb-contact-form-field">
-                    <input type="text" placeholder="Last Name*" class="form-control formInput" name="lastname" id="pb_lastname" value="" required>
-                </div>
+        <div class="row">
+            <div class="pb-contact-form-field">
+                <input type="text" placeholder="Cell Phone*" class="form-control" name="phone" id="pb_cellphone" value="" required>
             </div>
-
-            <div class="row">
-                <div class="pb-contact-form-field">
-                    <input type="text" placeholder="Cell Phone*" class="form-control formInput" name="phone" id="pb_cellphone" value="" required>
-                </div>
-                <div class="pb-contact-form-field">
-                    <input type="text" placeholder="Email*" class="form-control formInput" name="email" id="pb_email" value="" required>
-                </div>
-            </div>
-
+            <div class="pb-contact-form-field">
+                <input type="text" placeholder="Email*" class="form-control" name="email" id="pb_email" value="" required>
+            </div>            
         </div>
-
-        <div class="pb-contact-form-field" style="width: 100%;">
-            
-            <div style="height: 200px; overflow: auto; border: 1px solid #eee; padding: 5px; background: #fff; font-size: 0.8em; line-height: normal">
-                <div class="h4 text-center no-margin margin-bottom-10">Terms and Conditions</div>
-                <ol>
-                    <li>CodeAdvantage is a trade       name of CodeAdvantage LLC, (hereinafter referred to as the COMPANY). The       user of this site or the guardian of the daughter, son or ward,       (hereinafter referred to as the attendee) that will register and attend the       COMPANY’s programs is hereinafter referred to as the PARTICIPANT.&nbsp; The words programs, classes, class may       be used interchangeably to define the services or programs provided by the       COMPANY.</li>
-                    <li>The PARTICIPANT should       assume that everything the PARTICIPANT sees or reads on the Site is       copyrighted and may not be used except as provided in these Terms and       Conditions or in the text on the Site without the written permission of       the COMPANY unless otherwise noted. The COMPANY neither warrants nor       represents that your use of materials displayed on the Site will not       infringe rights of third parties not owned by or affiliated with the       COMPANY.</li>
-                    <li>The COMPANY hopes that the PARTICIPANT       will find this Web site to be useful and reliable; however, the COMPANY       cannot guarantee the following: that the content or other information       provided through the service will always be accurate or up-to-date, that       any of the functions of the service will always be error-free, although       the COMPANY aims to do its best to provide the most accurate information       as possible. If the USER sees errors on this website, please <a href="/contact-our-kids-coding-program" title="contact us">contact us</a> right away.</li>
-                    <li>The PARTICIPANT´s use of       and browsing in the Site are at the PARTICIPANT´s own risk. Neither the       COMPANY, any of its agencies, nor any other party involved in creating,       producing, or delivering the Site is liable for any direct, incidental,       consequential, indirect, or punitive damages arising out of the PARTICIPANT´s       access to, or use of, the Site. Without limiting the foregoing, everything       on the Site is provided to you <strong style="color:#f00">"AS IS" WITHOUT       WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT       LIMITIED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A       PARTICULAR PURPOSE, OR NONINFRINGEMENT</strong>. Please note that some jurisdictions may not       allow the exclusion of implied warranties, so some of the above exclusions       may not apply to the PARTICIPANT. The COMPANY also assumes no       responsibility, and shall not be liable for, any damages to, or viruses that       may infect the PARTICIPANT´s computer equipment or other property on       account of the PARTICIPANT´s access to, use of, or browsing in the Site or       the PARTICIPANT downloading of any materials, data, text, images, video,       or audio from the Site. </li>
-                    <li>Images of people, places,       and products displayed on the Site are either the property of, or used       with permission by, the COMPANY. The use of these images by the PARTICIPANT,       or anyone else authorized by the PARTICIPANT, is prohibited unless       specifically permitted by these Terms and Conditions or specific       permission provided elsewhere on the Site. Any unauthorized use of the       images may violate copyright laws, trademark laws, the laws of privacy and       publicity, and communications regulations and statutes.</li>
-                    <li>The trademarks, logos, and       service marks (collectively the "Trademarks") displayed on the       Site are registered and common law Trademarks of the COMPANY and others.       Nothing contained on the Site should be construed as granting, by       implication or otherwise, any license or right to use any Trademark       displayed on the Site without the written permission of the COMPANY or       such third party that may own the Trademarks displayed on the Site. The PARTICIPANT´s       use of the Trademarks displayed on the Site, or any other content on the       Site, is strictly prohibited. The PARTICIPANT is also advised that the       COMPANY will aggressively enforce its intellectual property rights to the       fullest extent of the law, including the seeking of criminal       prosecution. </li>
-                    <li>This Web site contains       links to other Web sites. The COMPANY is not responsible for the content,       privacy practices, or accuracy of: opinions expressed in or any other       aspects of such Web sites. Such Web sites are not investigated, monitored,       or checked for accuracy or completeness by the COMPANY.</li>
-                    <li>All information contained       on the COMPANY´s website, has been compiled from up to date details and       the COMPANY has taken care to ensure its accuracy. There may however be       occasions when an advertised facility is either modified or unavailable.       Such situations may be dictated by local circumstances, necessity for       maintenance, local construction work, water shortages, adverse weather,       fuel shortages, power cuts, and other circumstances beyond the COMPANY´s       control. If the COMPANY is advised of this, the COMPANY will of course       inform the USER as soon as possible, but the COMPANY cannot be held liable       in such circumstances.</li>
-                    <li>Health Policy: The       PARTICIPANT certifies that the attendee has no medical or other condition       that prohibits full participation in the program.&nbsp; Attendees of the COMPANY’s programs,       camps, events that display any indicators of illness will be sent home and       will be unable to attend the programs until the attendee is in good health       once again.&nbsp; </li>
-                    <li>Medical and Emergency       Policy:&nbsp; It is the sole       responsibility of the PARTICIPANT to ensure that the Company has the       correct emergency contact information to be used in cases of medical and       non-medical emergencies.&nbsp; The       PARTICIPANT understands the risk of injury involved in any outside of the       home and hereby agrees to assume full responsibility for the attendee       while attending COMPANY programs and agrees to hold harmless the COMPANY,       its owners and its employees and to indemnify the COMPANY against       loss.&nbsp; In emergency situations, if       the PARTICIPANT cannot be reached, the PARTICIPANT authorizes the COMPANY,       its agents and employees to secure medical attention for the       attendee.&nbsp; The PARTICIPANT will be       responsible for all costs associated with such medical attention.&nbsp; The PARTICIPANT shall provide the sole       insurance coverage for any medical treatment.</li>
-                    <li>The COMPANY is not       responsible for the personal property of the attendees during the time       that the attendees are in attendance at a COMPANY instructional session or       program.&nbsp; The PARTICIPANT is fully       responsible for all damage to and loss of the personal property of an       attendee regardless of the cause of the damage or loss.&nbsp; The PARTICIPANT accepts full       responsibility for such damage or loss and will not hold the COMPANY liable       in any case of occurrence.</li>
-                    <li>Safety of Attendees:&nbsp; The COMPANY takes safety of attendees       very seriously.&nbsp; Every employee of       the COMPANY has gone through local and national criminal and sex offender       background checks.&nbsp; </li>
-                    <li>Photography, Video and       Testimonials: To attend the programs of the COMPANY, every PARTICIPANT is       required to sign a photograph/media release that is included as part of       the COMPANY’s registration form.&nbsp;       The PARTICIPANT understands that the COMPANY may use any       photographs, videos or testimonials taken of attendees during program       times for the purpose of marketing the COMPANY’s services, for example on       the COMPANY website, in flyers, brochures and other advertisements, in       news or media reports about the COMPANY.&nbsp;       All images, testimonials, audio, video and photos taken during a COMPANY       program are the sole and exclusive property of the COMPANY.&nbsp; The PARTICIPANT agrees to not hold the       COMPANY, its owners or its employees liable for any injury, damages or       negligence claims associated with the images.</li>
-                    <li>Food Policy: The COMPANY       does not serve food or snacks during its programs.&nbsp; Unless indicated in the registration       form for specific programs, no snacks, food, drinks or gum is permitted in       class. </li>
-                    <li>Picking up Attendees from Programs: PARTICIPANTS should promptly  pick up and sign out their attendee at the end of each class.&nbsp; During the registration process, PARTICIPANTS  are asked to provide a list of people authorized by the PARTICIPANT to sign the  PARTICIPANT’s attendee out of class.&nbsp; The  PARTICIPANT will also be asked to create a password that only the program’s  instructor, the child and the individuals authorized by the PARTICIPANT will  know.&nbsp; If the password is given at sign  out to the instructor by an adult, the attendee will be allowed to exit the  class without checking the ID of the authorized. If the password is not given,  ID’s will be thoroughly checked by the instructor before allowing the attendee  to sign out.</li>
-                    <li>Self Sign Out by Attendee: During the registration process,  PARTICIPANTS have the option to allow attendees ages 10 and above to check  themselves out of class and to make it home by themselves.&nbsp; If this option is selected, the attendee can  sign themselves out, and is free to go from the COMPANY’s care without an  adult’s signature.  Please be aware, that in this case, the PARTICIPANT  takes full responsibility and liability for the attendee’s safety and well  being after the attendee has exited the classroom. If this option is not  selected, the attendee will follow our normal check out procedure.</li>
-                    <li>Classroom Work and       Projects: The PARTICIPANT understands that all work created by the       attendee while attending a COMPANY programs may be used in the COMPANY’s       promotional materials such as website, flyers, advertisements, media       outlets, etc.&nbsp; The PARTICIPANT will       not hold the COMPANY, its owners or employees, liable for any damages,       injuries or claims of negligence associated with the publishing of       classroom work or classroom projects.</li>
-                    <li>Billing and Refunds:       Complete payments for all COMPANY programs must be received before the       first day of class.&nbsp; Due to the       limited availability of space in COMPANY programs as well as the high cost       of investments in technical equipment, software and rental costs, all       program fees are non-refundable.&nbsp; </li>
-                    <li>Make up Classes: No make-ups are       scheduled for all coding classes. However attendees may attend another       coding class offering the missed material prior to the next scheduled       class session, availability permitting.  In the event that a student       is unable to attend another class offering the missed material,       instructors will do their best to offer special attention during the next       class session to make up the material but CodeAdvantage cannot guarantee       that all prior class material will be covered. </li>
-                    <li>&nbsp;Cancellation of Classes: The COMPANY       reserves the right to cancel or modify classes and programs and to make       changes to instructors.</li>
-                    <li>Information and Privacy:       The COMPANY may collect information from the PARTICIPANT to facilitate       registration of attendees in the COMPANY programs and to facilitate       payment of the COMPANY services.&nbsp;       This information may include, names, addresses, credit card       information, email addresses, telephone numbers, attendee age and grade       level.&nbsp; Any information stored by       the company is protected by a premium SSL certificate and will not be       sold, transferred or shared with Third Parties other than credit card or       payment processing institutions or organizations on whose property classes       may be conducted.&nbsp; Information may       only be released to comply with the law, enforce COMPANY policies or       protect the COMPANY’s rights, property or safety.&nbsp;&nbsp; </li>
-                    <li>Contact:&nbsp; If there are any questions regarding       these terms and conditions, please contact:&nbsp; CodeAdvantage LLC, 2311 Adam Clayton       Powell Jr. Blvd., New York, NY 10030 or <a href="mailto:office@codeadvantage.org">office@codeadvantage.org</a>. </li>
-                    <li>Policies Related to Virtual Classes:
-                        <ol>
-                            <li>There are NO make-ups for any classes missed.</li>
-                            <li>Due to the limited availability of space in COMPANY programs, all program fees are non-refundable.</li>
-                            <li>There is limited opportunity to catch up a attendee who enters the classroom 10min after the start time.</li>
-                            <li>Instructor will log on 10 min prior to class start to answer any questions about homework or if students want to show anything they have done.</li>
-                            <li>There will be additional learning enrichment available in our Advantage Portal after each lesson so an attendee can go beyond the lesson and challenge themselves.</li>
-                            <li>Attendees must have headphones on for the duration of the class</li>
-                            <li>Attendees must conduct a tech assessment to verify they meet all the technical requirements before they attend the 1st class.</li>
-                            <li>Attendees must be respectful to the instructor and classmates. If there are consistent behavior issues, a parent conference will be scheduled to address</li>
-                            <li>Agreement to Terms and Conditions:  By clicking on the check box below or by registering for one of the COMPANY’s programs, the PARTICIPANT understands and agrees to these Terms and Conditions.</li>
-                        </ol>
-
-                        </li>
-                </ol>
-            </div>
-            </div>
-            
-            <div class="block">
-                <label class="pure-material-checkbox">
-                    <input type="checkbox" name="newsletter" value="1" checked="">
-                    <span>Sign me up for the CodeAdvantage newsletter to hear about upcoming 
-                    classes and events in our online community</span>
-                </label>
-            
-                <label class="pure-material-checkbox" >
-                    <input type="checkbox" name="agree">
-                    <span>I agree with CodeAdvantage's terms and conditions</span>
-                </label>
-            </div>
-                <input class="btn btn-primary" type="submit" id="submitRegistration"  value="Continue"/>
-
-        </form>
-    </div>
-    <div class="pb-script-tag">
-
     </div>
 
+    <label class="pure-material-checkbox">
+        <input type="checkbox" name="newsletter" value="1" checked="">
+        <span>Sign me up for the CodeAdvantage news</span>
+      </label>
 
-    <script>
-        let gtag_report_conversion = function(url) {
+    <div>
+        <div style="height: 200px; overflow: auto; border: 1px solid #eee; padding: 5px; background: #fff; font-size: 0.8em; line-height: normal">
+            <div class="h4 text-center no-margin margin-bottom-10">Terms and Conditions</div>
+            <ol>
+                <li>CodeAdvantage is a trade       name of CodeAdvantage LLC, (hereinafter referred to as the COMPANY). The       user of this site or the guardian of the daughter, son or ward,       (hereinafter referred to as the attendee) that will register and attend the       COMPANY’s programs is hereinafter referred to as the PARTICIPANT.&nbsp; The words programs, classes, class may       be used interchangeably to define the services or programs provided by the       COMPANY.</li>
+                <li>The PARTICIPANT should       assume that everything the PARTICIPANT sees or reads on the Site is       copyrighted and may not be used except as provided in these Terms and       Conditions or in the text on the Site without the written permission of       the COMPANY unless otherwise noted. The COMPANY neither warrants nor       represents that your use of materials displayed on the Site will not       infringe rights of third parties not owned by or affiliated with the       COMPANY.</li>
+                <li>The COMPANY hopes that the PARTICIPANT       will find this Web site to be useful and reliable; however, the COMPANY       cannot guarantee the following: that the content or other information       provided through the service will always be accurate or up-to-date, that       any of the functions of the service will always be error-free, although       the COMPANY aims to do its best to provide the most accurate information       as possible. If the USER sees errors on this website, please <a href="/contact-our-kids-coding-program" title="contact us">contact us</a> right away.</li>
+                <li>The PARTICIPANT´s use of       and browsing in the Site are at the PARTICIPANT´s own risk. Neither the       COMPANY, any of its agencies, nor any other party involved in creating,       producing, or delivering the Site is liable for any direct, incidental,       consequential, indirect, or punitive damages arising out of the PARTICIPANT´s       access to, or use of, the Site. Without limiting the foregoing, everything       on the Site is provided to you <strong style="color:#f00">"AS IS" WITHOUT       WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT       LIMITIED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A       PARTICULAR PURPOSE, OR NONINFRINGEMENT</strong>. Please note that some jurisdictions may not       allow the exclusion of implied warranties, so some of the above exclusions       may not apply to the PARTICIPANT. The COMPANY also assumes no       responsibility, and shall not be liable for, any damages to, or viruses that       may infect the PARTICIPANT´s computer equipment or other property on       account of the PARTICIPANT´s access to, use of, or browsing in the Site or       the PARTICIPANT downloading of any materials, data, text, images, video,       or audio from the Site. </li>
+                <li>Images of people, places,       and products displayed on the Site are either the property of, or used       with permission by, the COMPANY. The use of these images by the PARTICIPANT,       or anyone else authorized by the PARTICIPANT, is prohibited unless       specifically permitted by these Terms and Conditions or specific       permission provided elsewhere on the Site. Any unauthorized use of the       images may violate copyright laws, trademark laws, the laws of privacy and       publicity, and communications regulations and statutes.</li>
+                <li>The trademarks, logos, and       service marks (collectively the "Trademarks") displayed on the       Site are registered and common law Trademarks of the COMPANY and others.       Nothing contained on the Site should be construed as granting, by       implication or otherwise, any license or right to use any Trademark       displayed on the Site without the written permission of the COMPANY or       such third party that may own the Trademarks displayed on the Site. The PARTICIPANT´s       use of the Trademarks displayed on the Site, or any other content on the       Site, is strictly prohibited. The PARTICIPANT is also advised that the       COMPANY will aggressively enforce its intellectual property rights to the       fullest extent of the law, including the seeking of criminal       prosecution. </li>
+                <li>This Web site contains       links to other Web sites. The COMPANY is not responsible for the content,       privacy practices, or accuracy of: opinions expressed in or any other       aspects of such Web sites. Such Web sites are not investigated, monitored,       or checked for accuracy or completeness by the COMPANY.</li>
+                <li>All information contained       on the COMPANY´s website, has been compiled from up to date details and       the COMPANY has taken care to ensure its accuracy. There may however be       occasions when an advertised facility is either modified or unavailable.       Such situations may be dictated by local circumstances, necessity for       maintenance, local construction work, water shortages, adverse weather,       fuel shortages, power cuts, and other circumstances beyond the COMPANY´s       control. If the COMPANY is advised of this, the COMPANY will of course       inform the USER as soon as possible, but the COMPANY cannot be held liable       in such circumstances.</li>
+                <li>Health Policy: The       PARTICIPANT certifies that the attendee has no medical or other condition       that prohibits full participation in the program.&nbsp; Attendees of the COMPANY’s programs,       camps, events that display any indicators of illness will be sent home and       will be unable to attend the programs until the attendee is in good health       once again.&nbsp; </li>
+                <li>Medical and Emergency       Policy:&nbsp; It is the sole       responsibility of the PARTICIPANT to ensure that the Company has the       correct emergency contact information to be used in cases of medical and       non-medical emergencies.&nbsp; The       PARTICIPANT understands the risk of injury involved in any outside of the       home and hereby agrees to assume full responsibility for the attendee       while attending COMPANY programs and agrees to hold harmless the COMPANY,       its owners and its employees and to indemnify the COMPANY against       loss.&nbsp; In emergency situations, if       the PARTICIPANT cannot be reached, the PARTICIPANT authorizes the COMPANY,       its agents and employees to secure medical attention for the       attendee.&nbsp; The PARTICIPANT will be       responsible for all costs associated with such medical attention.&nbsp; The PARTICIPANT shall provide the sole       insurance coverage for any medical treatment.</li>
+                <li>The COMPANY is not       responsible for the personal property of the attendees during the time       that the attendees are in attendance at a COMPANY instructional session or       program.&nbsp; The PARTICIPANT is fully       responsible for all damage to and loss of the personal property of an       attendee regardless of the cause of the damage or loss.&nbsp; The PARTICIPANT accepts full       responsibility for such damage or loss and will not hold the COMPANY liable       in any case of occurrence.</li>
+                <li>Safety of Attendees:&nbsp; The COMPANY takes safety of attendees       very seriously.&nbsp; Every employee of       the COMPANY has gone through local and national criminal and sex offender       background checks.&nbsp; </li>
+                <li>Photography, Video and       Testimonials: To attend the programs of the COMPANY, every PARTICIPANT is       required to sign a photograph/media release that is included as part of       the COMPANY’s registration form.&nbsp;       The PARTICIPANT understands that the COMPANY may use any       photographs, videos or testimonials taken of attendees during program       times for the purpose of marketing the COMPANY’s services, for example on       the COMPANY website, in flyers, brochures and other advertisements, in       news or media reports about the COMPANY.&nbsp;       All images, testimonials, audio, video and photos taken during a COMPANY       program are the sole and exclusive property of the COMPANY.&nbsp; The PARTICIPANT agrees to not hold the       COMPANY, its owners or its employees liable for any injury, damages or       negligence claims associated with the images.</li>
+                <li>Food Policy: The COMPANY       does not serve food or snacks during its programs.&nbsp; Unless indicated in the registration       form for specific programs, no snacks, food, drinks or gum is permitted in       class. </li>
+                <li>Picking up Attendees from Programs: PARTICIPANTS should promptly  pick up and sign out their attendee at the end of each class.&nbsp; During the registration process, PARTICIPANTS  are asked to provide a list of people authorized by the PARTICIPANT to sign the  PARTICIPANT’s attendee out of class.&nbsp; The  PARTICIPANT will also be asked to create a password that only the program’s  instructor, the child and the individuals authorized by the PARTICIPANT will  know.&nbsp; If the password is given at sign  out to the instructor by an adult, the attendee will be allowed to exit the  class without checking the ID of the authorized. If the password is not given,  ID’s will be thoroughly checked by the instructor before allowing the attendee  to sign out.</li>
+                <li>Self Sign Out by Attendee: During the registration process,  PARTICIPANTS have the option to allow attendees ages 10 and above to check  themselves out of class and to make it home by themselves.&nbsp; If this option is selected, the attendee can  sign themselves out, and is free to go from the COMPANY’s care without an  adult’s signature.  Please be aware, that in this case, the PARTICIPANT  takes full responsibility and liability for the attendee’s safety and well  being after the attendee has exited the classroom. If this option is not  selected, the attendee will follow our normal check out procedure.</li>
+                <li>Classroom Work and       Projects: The PARTICIPANT understands that all work created by the       attendee while attending a COMPANY programs may be used in the COMPANY’s       promotional materials such as website, flyers, advertisements, media       outlets, etc.&nbsp; The PARTICIPANT will       not hold the COMPANY, its owners or employees, liable for any damages,       injuries or claims of negligence associated with the publishing of       classroom work or classroom projects.</li>
+                <li>Billing and Refunds:       Complete payments for all COMPANY programs must be received before the       first day of class.&nbsp; Due to the       limited availability of space in COMPANY programs as well as the high cost       of investments in technical equipment, software and rental costs, all       program fees are non-refundable.&nbsp; </li>
+                <li>Make up Classes: No make-ups are       scheduled for all coding classes. However attendees may attend another       coding class offering the missed material prior to the next scheduled       class session, availability permitting.  In the event that a student       is unable to attend another class offering the missed material,       instructors will do their best to offer special attention during the next       class session to make up the material but CodeAdvantage cannot guarantee       that all prior class material will be covered. </li>
+                <li>&nbsp;Cancellation of Classes: The COMPANY       reserves the right to cancel or modify classes and programs and to make       changes to instructors.</li>
+                <li>Information and Privacy:       The COMPANY may collect information from the PARTICIPANT to facilitate       registration of attendees in the COMPANY programs and to facilitate       payment of the COMPANY services.&nbsp;       This information may include, names, addresses, credit card       information, email addresses, telephone numbers, attendee age and grade       level.&nbsp; Any information stored by       the company is protected by a premium SSL certificate and will not be       sold, transferred or shared with Third Parties other than credit card or       payment processing institutions or organizations on whose property classes       may be conducted.&nbsp; Information may       only be released to comply with the law, enforce COMPANY policies or       protect the COMPANY’s rights, property or safety.&nbsp;&nbsp; </li>
+                <li>Contact:&nbsp; If there are any questions regarding       these terms and conditions, please contact:&nbsp; CodeAdvantage LLC, 2311 Adam Clayton       Powell Jr. Blvd., New York, NY 10030 or <a href="mailto:office@codeadvantage.org">office@codeadvantage.org</a>. </li>
+                <li>Policies Related to Virtual Classes:
+                    <ol>
+                        <li>There are NO make-ups for any classes missed.</li>
+                        <li>Due to the limited availability of space in COMPANY programs, all program fees are non-refundable.</li>
+                        <li>There is limited opportunity to catch up a attendee who enters the classroom 10min after the start time.</li>
+                        <li>Instructor will log on 10 min prior to class start to answer any questions about homework or if students want to show anything they have done.</li>
+                        <li>There will be additional learning enrichment available in our Advantage Portal after each lesson so an attendee can go beyond the lesson and challenge themselves.</li>
+                        <li>Attendees must have headphones on for the duration of the class</li>
+                        <li>Attendees must conduct a tech assessment to verify they meet all the technical requirements before they attend the 1st class.</li>
+                        <li>Attendees must be respectful to the instructor and classmates. If there are consistent behavior issues, a parent conference will be scheduled to address</li>
+                        <li>Agreement to Terms and Conditions:  By clicking on the check box below or by registering for one of the COMPANY’s programs, the PARTICIPANT understands and agrees to these Terms and Conditions.</li>
+                    </ol>
 
-            var callback = function () {
-                if (typeof(url) != 'undefined') {
-                    window.location = url;
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-945420837/8nrGCL7Kz8IBEKX058ID',
-                'value': 140.0,
-                'currency': 'USD',
-                'transaction_id': '',
-                'event_callback': callback
-            });
+                    </li>
+            </ol>
+        </div>
+    </div>
 
+    <div>
+    <label class="pure-material-checkbox">
+        <input type="checkbox" name="agree">
+        <span>I agree with CodeAdvantage's terms and conditions</span>
+      </label>
+    </div>
+    
+    <div style="display: flex; justify-content: center;">
+        <input class="btn btn-primary" type="submit" id="submitRegistration"  value="Continue"/>
+    </div>
 
-            return false;
-        };
-        let submit_order;
-        jQuery(document).ready(function($) {
-            $('#checkPromo').click(function(){
-                var code = $('#pb_promo_code').val();
-                $.ajax({
-                    type: "get",
-                    url: '/promo-validator',
-                    dataType: 'json',
-                    data: {'code':code},
-                    success: function(jsn){
-                        if(jsn.discount) {
-                            let orig = $("#mcost").html();
-                            let np = orig;
-                            if(jsn.fix){
-                                np = orig-jsn.fix;
-                            } else {
-                                np = Math.round(orig*((100-jsn.discount)/100));
-                            }
-                            if(np<0){
-                                np = 0;
-                            }
+</form>
 
-                            $("#mcost").parent('span').css({"color":"#CCC", "text-decoration":"line-through"});
-                            if(np) {
-                                $("#dcost").html(' $' + np).css({"color":"#F00"});
-                            }
-                            else {
-                                $("#dcost").html(' FREE').css({"color":"#F00"});
-                            }
-                            $('#pmsg').html("");
-                        }
-                        else {
-                            $("#mcost").parent('span').css({"color":"inherit", "text-decoration":"none"});
-                            $("#dcost").html("");
-                            if(code) {
-                                $('#pmsg').html("Please enter a valid promo code");
-                            }
-
-
-                        }
-                    }
-                });
-            });
-
-            $('#pb_students').change(function(){
-                let costElm = $('#mcost');
-                let cnt = $(this).val();
-                $('.student_cnt').text(cnt);
-                let total = costElm.data("cost")*cnt;
-
-                costElm.text(total);
-
-
-                if (cnt > 1) {
-                    $('#studentBlock div.well div.child-num').show();
-                } else {
-                    $('#studentBlock div.well div.child-num').hide();
-                }
-
-                let tmpl = "";
-                let wells = $('#studentBlock div.well');
-                wells.each(function (i) {
-                    if (i == 0) {
-                        tmpl = $(this).clone();
-                    }
-                    if (i >= cnt) {
-                        $(this).remove();
-                    }
-                });
-
-                for (c = wells.length; c < cnt; c++) {
-                    let ntpl = tmpl.clone();
-                    ntpl.find('.child-num').text('Child ' + cnt);
-                    ntpl.find('input[type="text"],select').val("");
-                    ntpl.find('input[type="radio"]').prop('checked', false);
-                    ntpl.find('input,select,textarea').each(function(){
-                        let nm = $(this).prop('name').split('[');
-                        let ids = $(this).prop('id').split('\-');
-                        $(this).prop('name',nm[0]+"["+cnt+"]");
-                        $(this).prop('id',ids[0]+"-"+cnt);
-                    });
-                    ntpl.find('label').each(function(){
-                        let ids = $(this).prop('for').split('\-');
-                        $(this).prop('for',ids[0]+"-"+cnt);
-                    });
-
-                    ntpl.clone().appendTo($('#studentBlock'));
-                }
-                //$('#promo_code').val("").blur();
-                $('#checkPromo').click();
-                if(cnt>1) {
-                 //   showPromo(cnt);
-                }
-            });
-
-
-            let showPromo = function(num){
-                let fld = false;
-                if(num==2){
-                    fld = {"code":"CODE_10","title":"","text":""};
-                } else if(num>2){
-                    fld = {"code":"CODE_20","title":"","text":""};
-                }
-                if(fld) {
-
-                    Swal.fire({
-                        title: fld['title'],
-                        html: fld['text'],
-                        width: 400,
-                        icon: 'success',
-                        showCancelButton: false,
-                        confirmButtonColor: '#3085d6',
-                        confirmButtonText: 'Yes!'
-                    }).then((result) => {
-                        if (result.value) {
-                            $('#promo_code').val(fld['code']).blur();
-                        }
-                    });
-                }
-            };
-
-            $('#submitRegistration').click(function(e){
-                e.preventDefault();
-                let frm = $(this).parents('form').css({'position': "relative"});
-                let er = false;
-
-                $(frm).find('input:required, select:required').each(function () {
-
-                    if (this.value.length < 1) {
-                        er = 'Please fill in all required fields!';
-                    }
-                });
-                let cnt = $(frm).find('.student_girl').length;
-                if (!er &&
-                    $(frm).find('.student_gender:checked').length != cnt
-                ) {
-                    er = "Please indicate the child's gender";
-                }
-                if (!er && $(frm).find('input[name="agree"]').prop('checked') == false) {
-                    er = 'Please read and accept Terms and Conditions!';
-                }
-                if (!er && $(frm).find('input[name="certify"]').prop('checked') == false) {
-                    er = 'Please read and accept Registration Policy!';
-                }
-                if (er) {
-                    alert(er);
-                } else {
-                    gtag_report_conversion();
-                    let md = $('<div class="loading">').appendTo(frm);
-                    $.ajax({
-                        type: "post",
-                        url: '/checkout',
-                        dataType: 'html',
-                        data: $(frm).serialize(),
-                        success: function(dat){
-                            $('#order_title').html("You are now registered for the following program");
-                            $('#proceed').html(dat);
-                            $('#payform_proceed').submit();
-                        }
-                    });
-
-                }
-
-            });
-
-
-        });
-    </script>
-    <style>
-        .loading {
-            position: absolute;
-            top:0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255,255,255,0.5) url("images/loading.gif") center no-repeat;
-        }
-    </style>
 </div>
-    </div>
-    </div>
+
+<div class="pb-script-tag">
+
+</div>
+
+
+<script>
+let gtag_report_conversion = function(url) {
+
+    var callback = function () {
+        if (typeof(url) != 'undefined') {
+            window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-945420837/8nrGCL7Kz8IBEKX058ID',
+        'value': 140.0,
+        'currency': 'USD',
+        'transaction_id': '',
+        'event_callback': callback
+    });
+
+
+    return false;
+};
+let submit_order;
+jQuery(document).ready(function($) {
+    $('#checkPromo').click(function(){
+        var code = $('#pb_promo_code').val();
+        $.ajax({
+            type: "get",
+            url: '/promo-validator',
+            dataType: 'json',
+            data: {'code':code},
+            success: function(jsn){
+                if(jsn.discount) {
+                    let orig = $("#mcost").html();
+                    let np = orig;
+                    if(jsn.fix){
+                        np = orig-jsn.fix;
+                    } else {
+                        np = Math.round(orig*((100-jsn.discount)/100));
+                    }
+                    if(np<0){
+                        np = 0;
+                    }
+
+                    $("#mcost").parent('span').css({"color":"#CCC", "text-decoration":"line-through"});
+                    if(np) {
+                        $("#dcost").html(' $' + np).css({"color":"#F00"});
+                    }
+                    else {
+                        $("#dcost").html(' FREE').css({"color":"#F00"});
+                    }
+                    $('#pmsg').html("");
+                }
+                else {
+                    $("#mcost").parent('span').css({"color":"inherit", "text-decoration":"none"});
+                    $("#dcost").html("");
+                    if(code) {
+                        $('#pmsg').html("Please enter a valid promo code");
+                    }
+
+
+                }
+            }
+        });
+    });
+
+    $('#pb_students').change(function(){
+        let costElm = $('#mcost');
+        let cnt = $(this).val();
+        $('.student_cnt').text(cnt);
+        let total = costElm.data("cost")*cnt;
+
+        costElm.text(total);
+
+
+        if (cnt > 1) {
+            $('#studentBlock div.well div.child-num').show();
+        } else {
+            $('#studentBlock div.well div.child-num').hide();
+        }
+
+        let tmpl = "";
+        let wells = $('#studentBlock div.well');
+        wells.each(function (i) {
+            if (i == 0) {
+                tmpl = $(this).clone();
+            }
+            if (i >= cnt) {
+                $(this).remove();
+            }
+        });
+
+        for (c = wells.length; c < cnt; c++) {
+            let ntpl = tmpl.clone();
+            ntpl.find('.child-num').text('Child ' + cnt);
+            ntpl.find('input[type="text"],select').val("");
+            ntpl.find('input[type="radio"]').prop('checked', false);
+            ntpl.find('input,select,textarea').each(function(){
+                let nm = $(this).prop('name').split('[');
+                let ids = $(this).prop('id').split('\-');
+                $(this).prop('name',nm[0]+"["+cnt+"]");
+                $(this).prop('id',ids[0]+"-"+cnt);
+            });
+            ntpl.find('label').each(function(){
+                let ids = $(this).prop('for').split('\-');
+                $(this).prop('for',ids[0]+"-"+cnt);
+            });
+
+            ntpl.clone().appendTo($('#studentBlock'));
+        }
+        //$('#promo_code').val("").blur();
+        $('#checkPromo').click();
+        if(cnt>1) {
+         //   showPromo(cnt);
+        }
+    });
+
+
+    let showPromo = function(num){
+        let fld = false;
+        if(num==2){
+            fld = {"code":"CODE_10","title":"","text":""};
+        } else if(num>2){
+            fld = {"code":"CODE_20","title":"","text":""};
+        }
+        if(fld) {
+
+            Swal.fire({
+                title: fld['title'],
+                html: fld['text'],
+                width: 400,
+                icon: 'success',
+                showCancelButton: false,
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Yes!'
+            }).then((result) => {
+                if (result.value) {
+                    $('#promo_code').val(fld['code']).blur();
+                }
+            });
+        }
+    };
+
+    $('#submitRegistration').click(function(e){
+        e.preventDefault();
+        let frm = $(this).parents('form').css({'position': "relative"});
+        let er = false;
+
+        $(frm).find('input:required, select:required').each(function () {
+
+            if (this.value.length < 1) {
+                er = 'Please fill in all required fields!';
+            }
+        });
+        let cnt = $(frm).find('.student_girl').length;
+        if (!er &&
+            $(frm).find('.student_gender:checked').length != cnt
+        ) {
+            er = "Please indicate the child's gender";
+        }
+        if (!er && $(frm).find('input[name="agree"]').prop('checked') == false) {
+            er = 'Please read and accept Terms and Conditions!';
+        }
+        if (!er && $(frm).find('input[name="certify"]').prop('checked') == false) {
+            er = 'Please read and accept Registration Policy!';
+        }
+        if (er) {
+            alert(er);
+        } else {
+            gtag_report_conversion();
+            let md = $('<div class="loading">').appendTo(frm);
+            $.ajax({
+                type: "post",
+                url: '/checkout',
+                dataType: 'html',
+                data: $(frm).serialize(),
+                success: function(dat){
+                    $('#order_title').html("You are now registered for the following program");
+                    $('#proceed').html(dat);
+                    $('#payform_proceed').submit();
+                }
+            });
+
+        }
+
+    });
+
+
+});
+</script>
+<style>
+.loading {
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.5) url("/images/loading.gif") center no-repeat;
+}
+</style>
+</div>
+</div>
+</div>
+
+
 </div>
 
 <div class="theme-footer theme-clear-fix">
