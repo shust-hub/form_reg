@@ -10,6 +10,7 @@ body.pb {
     line-height: 1.5em;
     i{
         color: #FE6500;
+        
     }
     @media (min-width:320px) { font-size: 1.1em; }
     @media (min-width:600px) { font-size: 1.2em;}
@@ -21,7 +22,6 @@ body.pb {
 
 .row {
     display: flex;
-    align-items: baseline;
     @media (min-width:320px) { flex-direction: column;}
     @media (min-width:801px) { 
         flex-direction: row;
