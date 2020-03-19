@@ -225,7 +225,7 @@ body.pb {
     background-color: currentColor;
 }
 ////////////////////////////////////////////////////////////////////////////////
-.form {
+.formLogIn {
     background: white;
     padding: 40px;
     max-width: 100%;
@@ -239,23 +239,24 @@ body.pb {
     margin: 0 0 40px 0!important;
     display: flex;
   }
-  .top-area li {
+  .top-area .top-areaTab {
       width: 50%;
       padding-left: 0;
   }
-  .top-area li a {
+  .top-area .top-areaTab a {
     display: block;
     text-decoration: none;
     padding: 15px;
     background: rgba(160, 179, 176, 0.25);
     color: #a0b3b0;
-    font-size: 20px;
-    // float: left;
     text-align: center;
     cursor: pointer;
     transition: .5s ease;
+    font-size: 1em;    
+    @media (min-width:320px) { font-size: 1.1em; }
+    @media (min-width:600px) { font-size: 1.2em;}
   }
-  .top-area li a:hover {
+  .top-area .top-areaTab a:hover {
     background: #FE6500;
     color: #ffffff;
   }
@@ -268,13 +269,16 @@ body.pb {
     display: none;
   }
    
-  h1 {
+  .formLogIn-title {
     text-align: center;
     color: #FE6500;
     font-weight: 300;
     margin: 0 0 40px;
+    font-size: 1.3em; 
+    @media (min-width:320px) { font-size: 2.5em; }
+    @media (min-width:600px) { font-size: 3em;}
   }
-  label {
+  .formLogIn-label {
     position: absolute;
     -webkit-transform: translateY(6px);
             transform: translateY(6px);
@@ -283,34 +287,25 @@ body.pb {
     transition: all 0.25s ease;
     -webkit-backface-visibility: hidden;
     pointer-events: none;
-    // font-size: 22px;
   }
-  label .req {
+  .formLogIn-label .req {
     margin: 2px;
     color: #4ccef0;
   }
-  label.active {
+  .formLogIn-label.active {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
     left: 2px;
     font-size: 14px;
   }
-  label.active .req {
+  .formLogIn-label.active .req {
     opacity: 0;
   }
-  label.highlight {
+  .formLogIn-label.highlight {
     color: #707070;
   }
   input, textarea {
-    // font-size: 22px;
     display: block;
-    width: 100%;
-    height: 100%;
-    // background: none;
-    // background-image: none;
-    // border: 1px solid #a0b3b0;
-    color: #707070;
-    border-radius: 0;
     transition: border-color .25s ease, box-shadow .25s ease;
   }
   input:focus, textarea:focus {

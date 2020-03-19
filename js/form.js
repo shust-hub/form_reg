@@ -2,7 +2,7 @@
 jQuery(document).ready(function($) {
     //использование jQuery как $
 
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+$('.formLogIn').find('input, textarea').on('keyup blur focus', function (e) {
   
     var $this = $(this),
         label = $this.prev('label');
@@ -31,7 +31,7 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
   
   });
   
-  $('.tab a').on('click', function (e) {
+  $('.top-areaTab a').on('click', function (e) {
     
     e.preventDefault();
     
