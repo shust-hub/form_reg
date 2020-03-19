@@ -1,7 +1,4 @@
-// Code By Webdevtrick ( https://webdevtrick.com )
 jQuery(document).ready(function($) {
-    //использование jQuery как $
-
 $('.formLogIn').find('input, textarea').on('keyup blur focus', function (e) {
   
     var $this = $(this),

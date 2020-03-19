@@ -4,13 +4,17 @@ body.pb {
 .formTitle{
     text-align: left;
 }
+@font-face {
+    font-family: codeadvantage-font; 
+    src: url(../fonts/codeadvantage-font.woff); 
+
 .formText {
     text-align: left;
     font-size: 1.1em;
     line-height: 1.5em;
     i{
         color: #FE6500;
-        
+        font-family: codeadvantage-font; 
     }
     @media (min-width:320px) { font-size: 1.1em; }
     @media (min-width:600px) { font-size: 1.2em;}
