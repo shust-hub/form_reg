@@ -176,26 +176,6 @@ body.pb {
     transform: translate(4px, 3px);
 }
 
-/* Hover, Focus */
-.pure-material-checkbox:hover > input {
-    opacity: 0.04;
-}
-
-.pure-material-checkbox > input:focus {
-    opacity: 0.12;
-}
-
-.pure-material-checkbox:hover > input:focus {
-    opacity: 0.16;
-}
-
-/* Active */
-.pure-material-checkbox > input:active {
-    opacity: 1;
-    transform: scale(0);
-    transition: transform 0s, opacity 0s;
-}
-
 .pure-material-checkbox > input:active + span::before {
     border-color: #4ccef0;
 }
