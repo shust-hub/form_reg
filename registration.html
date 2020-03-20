@@ -287,7 +287,7 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
 
             <div class="row">
                 <div class="pb-contact-form-field">
-                    <select name="previously_registered" id="previouslyRegistered">
+                    <select name="previously_registered" class="previouslyRegistered">
                         <option value="">None</option>
                         <option value="">John Smith, 2nd grade</option>
                         <option value="">Sara Connor, 7th grade</option>
@@ -432,18 +432,20 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
 </div>
 
 <script>
-    jQuery(document).ready(function() {
-        jQuery("#previouslyRegistered").on('change',function() {
+
+    jQuery('body').on('change', '.previouslyRegistered', function() {
+        console.log("aerr")
         var x = this.selectedIndex;
+        var p = jQuery(this).parents(".well");
         if (x != "") {
-            jQuery(".studentInfo").hide("slow");
-            jQuery("#previouslyRegistered").parent().animate({width: '100%'}, 600);
+            p.find(".studentInfo").hide("slow");
+            jQuery(this).parent().animate({width: '100%'}, 600);
         } else {
-            jQuery("#previouslyRegistered").parent().animate({width: '49%'}, 600);
-            jQuery(".studentInfo").show("slow");
+            jQuery(this).parent().animate({width: '49%'}, 600);
+            p.find(".studentInfo").show("slow");
         }
     });
-}); 
+
 </script>
 
 <script>
