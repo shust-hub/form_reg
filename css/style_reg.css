@@ -2,6 +2,11 @@ body.pb {
   opacity: 1;
 }
 
+@font-face {
+  font-family: "codeadvantage-font"; 
+  src: url('../fonts/codeadvantage-font.woff'); 
+ }
+
 .formTitle {
   text-align: left;
 }
@@ -14,6 +19,7 @@ body.pb {
 
 .formText i {
   color: #FE6500;
+  font-family: "codeadvantage-font"; 
 }
 
 @media (min-width: 320px) {
