@@ -287,17 +287,27 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
 
             <div class="row">
                 <div class="pb-contact-form-field">
-                    <input type="text" class="form-controlinputForm" placeholder="First Name*" name="student_firstname[1]" id="pb_student_firstname-1" required>
+                    <select name="previously_registered" id="previouslyRegistered">
+                        <option value="">None</option>
+                        <option value="">John Smith, 2nd grade</option>
+                        <option value="">Sara Connor, 7th grade</option>
+                    </select>
+                </div>   
+            </div>
+
+            <div class="row">
+                <div class="pb-contact-form-field">
+                    <input type="text" class="form-control inputForm studentInfo" placeholder="First Name*" name="student_firstname[1]" id="pb_student_firstname-1" required>
                 </div>            
                 
                 <div class="pb-contact-form-field">
-                    <input  type="text" class="form-control inputForm" placeholder="Last Name*" name="student_lastname[1]" id="pb_student_lastname-1" required>
+                    <input  type="text" class="form-control inputForm studentInfo" placeholder="Last Name*" name="student_lastname[1]" id="pb_student_lastname-1" required>
                 </div>
             </div>
 
             <div class="row">
                 <div class="pb-contact-form-field">
-                    <select class="form-control selectForm" name="student_grade[1]" id="pb_student_grade-1" required>
+                    <select class="form-control selectForm studentInfo" name="student_grade[1]" id="pb_student_grade-1" required>
                         <option value="">Grade*</option>
                         <option value="Pre-K">Pre-K</option>
                         <option value="K">K</option>
@@ -312,7 +322,13 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                     </select>
                 </div>
                 <div class="pb-contact-form-field">
-                    <input type="text" id="pb_student_experience-1" placeholder="Does your child have prior experience?" class="form-control inputForm" name="student_experience[1]">
+                    <select id="pb_student_experience-1"  class="form-control inputForm studentInfo" name="student_experience[1]">
+                        <option value="">Does your child have prior coding experience?*</option>
+                        <option value="None">None</option>
+                        <option value="A little">A little</option>
+                        <option value="More than 1 coding course completed">More than 1 coding course completed</option>
+                        <option value="2 or more coding courses completed">2 or more coding courses completed</option>
+                    </select>
                 </div>                
             </div>
         </div>
@@ -329,13 +345,20 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
                 <input type="text" class="form-control inputForm" placeholder="Last Name*" name="lastname" id="pb_lastname" value="" required>
             </div>
         </div>
-
         <div class="row">
             <div class="pb-contact-form-field">
                 <input type="text" placeholder="Cell Phone*" class="form-control" name="phone" id="pb_cellphone" value="" required>
             </div>
             <div class="pb-contact-form-field">
                 <input type="text" placeholder="Email*" class="form-control" name="email" id="pb_email" value="" required>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="pb-contact-form-field">
+                <input type="text" placeholder="Country*" class="form-control" name="country" id="pb_country" value="" required>
+            </div>
+            <div class="pb-contact-form-field">
+                <input type="text" placeholder="City*" class="form-control" name="city" id="pb_city" value="" required>
             </div>            
         </div>
     </div>
@@ -408,6 +431,20 @@ src="https://www.facebook.com/tr?id=191358722010157&ev=PageView
 
 </div>
 
+<script>
+    jQuery(document).ready(function() {
+        jQuery("#previouslyRegistered").on('change',function() {
+        var x = this.selectedIndex;
+        if (x != "") {
+            jQuery(".studentInfo").hide("slow");
+            jQuery("#previouslyRegistered").parent().animate({width: '100%'}, 600);
+        } else {
+            jQuery("#previouslyRegistered").parent().animate({width: '49%'}, 600);
+            jQuery(".studentInfo").show("slow");
+        }
+    });
+}); 
+</script>
 
 <script>
 let gtag_report_conversion = function(url) {
