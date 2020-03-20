@@ -78,6 +78,11 @@ body.pb {
   }
 }
 
+.inputCaption {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
 .btnForm {
   background-color: #FE6500;
   color: white;
@@ -154,10 +159,6 @@ body.pb {
 
 .formCheckbox label {
   font-size: 0.7em;
-}
-.inputCaption {
-  font-size: 0.7rem;
-  line-height: 1rem;
 }
 
 .pure-material-checkbox {
