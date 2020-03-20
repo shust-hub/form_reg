@@ -155,6 +155,10 @@ body.pb {
 .formCheckbox label {
   font-size: 0.7em;
 }
+.inputCaption {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
 
 .pure-material-checkbox {
   z-index: 0;
